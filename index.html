@@ -14,6 +14,17 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/querries.css" />
+
+  <script defer src="js/script.js"></script>
+
+  <script defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <title>Omnifood</title>
 </head>
 
@@ -25,11 +36,13 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#" class="main-nav-link">How it works</a></li>
-        <li><a href="#" class="main-nav-link">Meals</a></li>
-        <li><a href="#" class="main-nav-link">Testimonials</a></li>
-        <li><a href="#" class="main-nav-link">Pricing</a></li>
-        <li><a href="#" class="main-nav-link nav-cta">Try for
+        <li><a href="#how" class="main-nav-link">How it works</a>
+        </li>
+        <li><a href="#meals" class="main-nav-link">Meals</a></li>
+        <li><a href="#testimonials"
+            class="main-nav-link">Testimonials</a></li>
+        <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+        <li><a href="#cta" class="main-nav-link nav-cta">Try for
             free</a>
         </li>
       </ul>
@@ -55,9 +68,10 @@
             eat healthy again. Tailored to your personal tastes and
             nutritional needs.
           </p>
-          <a href="#" class="btn btn--full margin-right-sm">Start
+          <a href="#cta" class="btn btn--full margin-right-sm">Start
             eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#how" class="btn btn--outline">Learn more
+            &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="content/img/customers/customer-1.jpg"
@@ -100,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="container">
         <span class="subheading">How it works</span>
         <h2 class="heading-secondary">
@@ -164,7 +178,7 @@
         </div>
       </div>
     </section>
-    <section class="section-meal">
+    <section class="section-meal" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">
@@ -277,7 +291,7 @@
       </div>
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
 
       <div class="container testimonial-container">
         <span class="subheading">Testimonials</span>
@@ -377,7 +391,7 @@
       </div>
     </section>
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container">
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">
@@ -494,7 +508,7 @@
             subscription, and we refund unused days.</p>
         </div>
     </section>
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -566,7 +580,8 @@
               </ion-icon>
             </a></li>
         </ul>
-        <p class="copyright">Copyright &copy; 2023 by Omnifood, Inc.
+        <p class="copyright">Copyright &copy; <span
+            class="year">2023</span> by Omnifood, Inc.
           Alls rights reserved</p>
       </div>
 
@@ -623,10 +638,7 @@
 
     </div>
   </footer>
-  <script type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
