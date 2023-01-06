@@ -181,6 +181,7 @@ strong {
 }
 
 .btn-mobile-nav {
+  display: none;
   border: none;
   background: none;
   cursor: pointer;
